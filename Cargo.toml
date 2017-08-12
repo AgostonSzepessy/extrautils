@@ -68,6 +68,10 @@ name = "tar"
 path = "src/bin/tar.rs"
 
 [[bin]]
+name = "uuidgen"
+path = "src/bin/uuidgen.rs"
+
+[[bin]]
 name = "watch"
 path = "src/bin/watch.rs"
 
@@ -87,6 +91,8 @@ termion = "1.5.1"
 rust-lzma = "0.2"
 tree_magic = "0.2"
 bzip2 = { git = "https://github.com/ids1024/bzip2-rs", branch = "redox" }
+uuid = { version = "0.5.1", features = ["v1", "v4"] }
+rand = "0.3.16"
 
 [replace]
 "filetime:0.1.10" = { git = "https://github.com/alexcrichton/filetime.git" }
